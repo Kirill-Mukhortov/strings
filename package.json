@@ -1,0 +1,16 @@
+{
+  "name": "strings",
+  "version": "1.0.0",
+  "description": "Checking if a string is a number",
+  "main": "",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "is digit",
+    "digits"
+  ],
+  "author": "Kirill Mukhortov",
+  "license": "ISC"
+}
