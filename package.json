@@ -5,12 +5,16 @@
   "main": "",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [
     "is digit",
     "digits"
   ],
   "author": "Kirill Mukhortov",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@jest/globals": "^29.4.3",
+    "jest": "^29.4.3"
+  }
 }
