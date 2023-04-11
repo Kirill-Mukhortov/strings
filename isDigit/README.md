@@ -7,7 +7,7 @@
 
 Public API:
 
-- `isDigit(str)` main function that takes a number as a string and returns boolean if string is digit or not. Works with different notations. you can add your own to the dictionary.
+- `isDigit(str)` main function that takes a number as a string and returns boolean if string is digit or not. Works with different notations. You can add your own to the dictionary.
 
 ```js
 import { isDigit } from './isDigit.js';
