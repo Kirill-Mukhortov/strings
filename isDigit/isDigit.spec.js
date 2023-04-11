@@ -27,11 +27,13 @@ describe('Get hex', () => {
         const romanHex = getHex('Ⅻ');
         const indoArabicHex = getHex('٥');
         const arabicIndianHex = getHex('۵');
+        const noChar = getHex();
 
         expect(arabicHex).toBe('0031');
         expect(romanHex).toBe('216b');
         expect(indoArabicHex).toBe('0665');
         expect(arabicIndianHex).toBe('06f5');
+        expect(noChar).toBe('');
     });
 
     test('Should return empty string if argument is not a char', () => {

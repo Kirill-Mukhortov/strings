@@ -1,6 +1,5 @@
 import { notationHexList } from './notationHexList.js';
 
-
 export function whatNotation(hex) {
     let notation;
 
