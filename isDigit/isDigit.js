@@ -27,6 +27,10 @@ export function getHex(char) {
 
 
 export function isDigit(str) {
+    if (str.at(0) === '-') {
+        str = Array.from(str).slice(1).join('');
+    }
+
     const firstCharNotation = whatNotation(getHex(str.at(0)));
     let hex;
 
@@ -34,7 +38,7 @@ export function isDigit(str) {
         return false;
     }
 
-    for (let i = 0; i < str.length; i++) {
+    for (let i = 0; i < str.length; i += 1) {
         hex = getHex(str.at(i));
 
         if (hex < notationHexList[firstCharNotation].min || hex > notationHexList[firstCharNotation].max) {

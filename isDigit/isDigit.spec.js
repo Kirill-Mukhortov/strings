@@ -46,10 +46,10 @@ describe('Is digit', () => {
         expect(isDigit(' ')).toBeFalsy();
         expect(isDigit('a')).toBeFalsy();
         expect(isDigit('1a2')).toBeFalsy();
+        expect(isDigit('-12')).toBeTruthy();
         expect(isDigit('123')).toBeTruthy();
-        expect(isDigit('ⅫⅬⅮⅯ')).toBeTruthy();
         expect(isDigit('٣٤٥')).toBeTruthy();
         expect(isDigit('۱۵۶')).toBeTruthy();
-
+        expect(isDigit('ⅫⅬⅮⅯ')).toBeTruthy();
     });
 });
